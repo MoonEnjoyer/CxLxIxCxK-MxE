@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+  <title>Luce, I ♥ You!</title>
+  <link rel="shortcut icon" type="image/png" href="https://icon-library.com/images/heart-icon-pixel/heart-icon-pixel-27.jpg"/>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+
+
+<body>
+  <audio id="divAudio">
+  <source src="audio.mp4" type="audio/mp4">
+  </audio>
+
+  <script>
+    var vAudio = document.getElementById("divAudio");
+    function playMusic()
+    {
+        vAudio.play();
+    }
+  </script>
+  <div onmousemove="playMusic()">
+  <div id="background"></div>
+  <div id="chest">
+    <div class="heart left side top"></div>
+    <div class="heart center">&hearts;ddd</div>
+    <div class="text" style="font:bold; font-family: 'Times New Roman', Times, serif; text-align: left">
+    Lucy
+      <br/> 
+      <span>&amp;</span> 
+      <br/>Moo♥</div>
+    <div class="heart right side"></div>
+  </div>
+  <div class="bgoverlay">
+    <div class="container">
+      </span>
+      <div class="endtext">
+        <span class="close" title="Restart"><i class="fa fa-times"></i></span>  
+        <h1 style="font-size:235%;text-align:center;">My sweet Lucypie, this is a lil "gift" for you from me! :D</h1>
+        <h2 style="font-size:180%;text-align:center;">I love you lots and will always have my heart going doki-doki for you ^_^</h2>
+        <h3 style="font-size:150%;text-align:center;">I apologize for making you angry today</h3>
+        <h4 style="font-size:100%;text-align:center;">and being all mean as well.. dummy me! >:(</h4>
+        <h5 style="font-size:120%;text-align:center;"><strong>Would you please forgive me, kitty?</strong></h5>
+        <h6 style="font-size:100%;text-align:center;">~your lovely Moo-boi</h6>
+      </div>
+    </div>
+  </div>
+        <style>
+    .boop {
+      display: inline-block;
+      border-radius: 5px;
+      background-color: #808080;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 24px;
+      width: 250px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 1px;
+    }
+
+    .boop span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .boop span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .boop:hover span {
+      padding-right: 25px;
+    }
+
+    .boop:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+    <div id="FirstClickMe" align="right">
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#FirstClickMe').hide().delay(5000).fadeIn(200);
+});
+    </script>
+
+    <button class="boop" style="vertical-align:middle; background-color: #141414; position:relative; top:-100px;"><span><a href="./message" style="color: pink">TO DA MESSAGE!</a></span></button> <!-- change domain here -->
+    </div>
+  <body oncontextmenu="return false"></body>
+</body>
+</html>
