@@ -1,1 +1,11 @@
-
+body{
+	/* background : black; -- I don't even know why this is here, lmao.. ignore this line completely */
+	background-image: url("bcgr_img.jpg");
+	background-color: black;
+	height: 1920px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	/* ^^ Remove the upper style (line 9) if you uncomment the 2 other ones (line 5 & 8), also make sure to replace the new text with old one in index.js
+}
