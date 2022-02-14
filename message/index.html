@@ -160,6 +160,19 @@
 <body>
 	<div id="mainDiv" <style>user-select: none;</style>>
 	<div id="content">
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+		<audio id="divAudio">
+			<source src="music.mp4" type="audio/mp4">
+		</audio>
+		<script>
+			var vAudio = document.getElementById("divAudio");
+			function playMusic()
+			{
+				vAudio.play();
+			}
+		</script>
+		<div onmousemove="playMusic()" style="user-select:none">
 		<div id="code">
 			<span class="comments">//</span><br/>
 			i.meet(u)<br/>
