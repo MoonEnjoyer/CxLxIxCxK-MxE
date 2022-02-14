@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Our Sweet Story (^^)</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">//</span><br/>
+			i.meet(u)<br/>
+			<span class="comments"># April 17, 2020, 11:54 PM, you first messaged me on discord </span><br/>
+			<span class="comments"># laughing about me being offline there heheh ;D</span><br/>
+			<span class="comments"># November 23, 2020, 2:59 PM, I stepped on your epic server </span><br/>
+			<span class="comments"># , where we hang out and interacted for months bonding together. </span><br/>
+			<span class="comments"><em># On January 16, 2021, 4:03, you pinned "I love you" vamp manga shot</em></span><br/>
+			<span class="comments"><em># I finally did the same on 28th, at 12:48.. saying "There is no meme.. I love you" :)<em></span><br/>
+			i.confess(u)<br/>
+			<span class="comments"># And shortly after these, we directly confessed our feelings towards each other..</span><br/>
+			i = Boy(<span class="string">"Museyib"</span>);<br/>
+			u = Girl(<span class="string">"Lucy"</span>);<br/>
+			<span class="comments">//</span><br/>
+			<span class="comments"># September 17, 2021, we officially began dating</span><br/>
+			<span class="comments"># , </span><br/>
+			<span class="comments"><strong># you officially became my girlfriend after months of mutual emotional struggles.</strong></span><br/>
+			u.accepted(i)<br/>
+			<span class="comments"># Since then, we spent every day having fun together with minimal break.</span><br/>
+			happy(u, i)<br/>
+			<span class="comments"># We enjoy talking about everything together.</span><br/>
+			talking(u, i)<br/>
+			<span class="comments"># We enjoy listening to music together.</span><br/>
+			listening_to_stuff(u, i)<br/>
+			<span class="comments"># We enjoy playing games together.</span><br/>
+			gaming(u, i)<br/>
+			<span class="comments"># We enjoy laughing and smiling together.</span><br/>
+			joy(u, i)<br/>
+			<span class="comments"># Sometimes there are a <em>few</em> conflicts between us.</span><br/>
+			conflict(u, i, sometimes=<span class="keyword">True</span>)<br/>
+			<span class="comments"># But we are getting more and more in harmony together, learning each others triggers, boundaries and trust.</span><br/>
+			u.in_harmony_with(i) <br/>
+			i.in_harmony_with(u) <br/>
+			<span class="comments"># You are the love of my life, Lucy ^_^</span><br/>
+			while <span class="keyword">True AF</span>:<br/>
+			<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br/>
+			<span class="placeholder"></span><span class="placeholder"></span>u = everything<br/>
+			<span class="placeholder"></span><span class="keyword">else</span>:<br/>
+			<span class="placeholder"></span><span class="placeholder"></span>everything = u<br/>
+			<span class="comments"># Waiting till I will be able to get to Farum, to <strong>you</strong>.. then we will be the happiest couple in the world, darling!</span><br/>
+			i.marry(u, in_the_future=<span class="keyword">True</span>)<br/>
+			i.live_happily_forever_with(u)<br/>
+			<span class="comments"># As long as my heart beats, I will love you with my life, min sød kitten <3</span><br/>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Lucy, I have fallen in love with you for over
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					<strong>Love u forever and ever.</strong><br/>
+					<div class="signature">- A.M | Moo ;3</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var offsetX = $("#loveHeart").width() / 2;
+	var offsetY = $("#loveHeart").height() / 2 - 55;
+	var together = new Date();
+	
+	together.setFullYear(2020, 1, 28);
+	together.setHours(12);
+	together.setMinutes(48);
+	together.setSeconds(0);
+	together.setMilliseconds(0);
+
+	if (!document.createElement('canvas').getContext) {
+		var msg = document.createElement("div");
+		msg.id = "errorMsg";
+		msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+		document.body.appendChild(msg);
+		$("#code").css("display", "none")
+		$("#copyright").css("position", "absolute");
+		$("#copyright").css("bottom", "10px");
+		document.execCommand("stop");
+	} else {
+		setTimeout(function () {
+			startHeartAnimation();
+		}, 5000);
+
+		timeElapse(together);
+		setInterval(function () {
+			timeElapse(together);
+		}, 500);
+
+		adjustCodePosition();
+		$("#code").typewriter();
+	}
+</script>
+</body>
+</html>
